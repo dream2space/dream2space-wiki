@@ -4,7 +4,18 @@ import time
 import serial
 
 if __name__ == "__main__":
-    print("\nEnter COM port:")
+
+    # Welcome screen
+    welcome_msg = "+-+-+-+-+-+-+-+ +-+-+\n"
+    welcome_msg += "|W|e|l|c|o|m|e| |t|o|\n"
+    welcome_msg += "+-+-+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+\n"
+    welcome_msg += "|T|r|a|n|s|c|e|i|v|e|r| |S|e|t|u|p|\n"
+    welcome_msg += "+-+-+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+\n"
+    welcome_msg += "|P|r|o|g|r|a|m|\n"
+    welcome_msg += "+-+-+-+-+-+-+-+\n"
+    print(welcome_msg)
+
+    print("Enter COM port:")
     print("-----------------------")
     com_port = input()
 
