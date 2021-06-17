@@ -32,7 +32,7 @@ if __name__ == "__main__":
     if 'COM' not in com_port:
         com_port = 'COM'+com_port
 
-    ser = serial.Serial(com_port, baudrate=9600, timeout=10)
+    ser = serial.Serial(com_port, baudrate=9600, timeout=2)
 
     ser.write(b"AT")
     time.sleep(1)
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     if ret != b"OK\r\n":
         print("Not ok, please retry")
         print("Operation aborted, no configuration was done")
-        print("Check your connections again")
+        print("Check your connections again\n")
         sys.exit()
     else:
         print("AT commands output:")
