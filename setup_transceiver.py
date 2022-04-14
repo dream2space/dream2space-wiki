@@ -44,6 +44,19 @@ if __name__ == "__main__":
         print("Check your connections again\n")
         sys.exit()
     else:
+
+        ser.write(B"AT+P8")
+        time.sleep(0.01)
+        print(ser.readline())
+
+        ser.write(B"AT+RX")
+        time.sleep(0.01)
+        print(ser.readline())
+        print(ser.readline())
+        print(ser.readline())
+        print(ser.readline())
+        print()
+
         print("AT commands output:")
         print("-----------------------")
 
