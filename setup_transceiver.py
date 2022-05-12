@@ -58,7 +58,7 @@ if __name__ == "__main__":
         print()
 
         print("AT commands output:")
-        print("-----------------------")
+        print("----------------------")
 
     at_channel_command = ("AT+" + channel).encode("utf-8")
 
